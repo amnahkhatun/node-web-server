@@ -55,6 +55,12 @@ app.get('/about', (req, res) => {
   //passing static data to about.hbs
   res.render('about.hbs', {
     pageTitle: 'About page',
+  });
+});
+
+app.get('/projects', (req, res)=>{
+  res.render('projects.hbs', {
+    pageTitle: 'Project'
   })
 })
 
